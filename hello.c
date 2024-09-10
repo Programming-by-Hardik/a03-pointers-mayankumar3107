@@ -52,7 +52,7 @@ void swap(int *a, int *b) {
     
     
     
-    
+   
 }
 
 // Function to find the maximum value in an array using pointers
