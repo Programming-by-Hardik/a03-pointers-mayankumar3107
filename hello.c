@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
 // Function prototypes
 void swap(int *a, int *b);
 int findMax(int *arr, int length);
@@ -45,38 +46,47 @@ int main() {
 // Function to swap two integers using pointers
 void swap(int *a, int *b) {
     //Write the function description
-
-
-
-
-
-
-
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    
+    
+    
+   
 }
 
 // Function to find the maximum value in an array using pointers
 int findMax(int *arr, int length) {
     //Write the fucntion description 
-
-
-
-
-
-
-
-  
+    int max = -1; // considering the array contains only positive values 
+    for(int i=0;i<length;i++){
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    }
+    return max;
+    
+    
+    
+    
 }
 
 // Function to reverse an array using pointers
 void reverseArray(int *arr, int length) {
     //Write the function description 
-
-
-
-
-
-
-
+    int i=0;
+    int j=length-1;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    
+    
+    
+    
 }
 
 //---------------------------------
